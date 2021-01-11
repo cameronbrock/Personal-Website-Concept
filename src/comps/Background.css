@@ -1,0 +1,25 @@
+
+#bkg_1 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, red, lime);
+  z-index: -1;
+}
+
+#bkg_2 {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(135deg, orange, purple);
+  animation: bkg_transition 20s ease-in-out infinite;
+}
+
+@keyframes bkg_transition {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+

@@ -1,0 +1,51 @@
+
+#blurb {
+  color: white;
+}
+
+#headshot {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+
+  animation: fadein_headshot 1s;
+
+}
+
+#blurb_name {
+  text-align: center;
+  animation: fadein_text 1s;
+}
+
+#blurb_desc {
+  text-align: center;
+  animation: fadein_text 1s;
+}
+
+
+@keyframes fadein_headshot {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.0);
+  }
+}
+
+@keyframes fadein_text {
+  from {
+    opacity: 0;
+    text-align: center;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    text-align: center;
+    transform: scale(1);
+  }
+}
+

@@ -1,0 +1,56 @@
+
+html {
+  scroll-snap-type: y mandatory;
+  margin: 0;
+}
+
+#sec1 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-snap-align: start;
+}
+
+#sec2 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-snap-align: start;
+}
+
+#sec3 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-snap-align: start;
+}
+
+#background {
+  position: fixed;
+  width: 100%;
+  /*height: 500px;*/
+  background-image: linear-gradient(135deg, green, purple);
+  z-index: -1;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+[data-aos="asdf"] {
+  from {
+   opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+[data-aos="fade2"]
+{
+  opacity: 1;
+  &.aos-animate {
+    opacity: 0;
+  }
+}
+

@@ -1,0 +1,38 @@
+#about_me_header {
+  font-size: 60px;
+  color: white;
+  padding-top: 100px;
+  padding-left: 50px;
+  animation: about_me_header_animation .5s;
+}
+
+#about_me_desc {
+  color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 20px;
+  animation: about_me_desc_animation .5s;
+  font-size: 2.9vw;
+}
+
+@keyframes about_me_header_animation {
+  from {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes about_me_desc_animation {
+  from {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+

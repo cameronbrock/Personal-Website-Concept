@@ -1,0 +1,30 @@
+
+.github_link {
+  height: 100px;
+  width: 250px;
+  background-color: blue;
+}
+
+.github_link_overlay {
+  height: 100px;
+  width: 250px;
+  background-color: red;
+  opacity: 0;
+}
+
+.contact_info_header {
+  padding-top: 50px;
+  color: white;
+  text-align: center;
+  animation: contact_info_header_anim 1s;
+}
+
+@keyframes contact_info_header_anim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
